@@ -1,0 +1,81 @@
+.Container{
+  color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr); 
+    grid-template-rows: repeat(2, 2fr);
+}
+
+    h1 {
+        font-size: 50px;
+        margin-bottom: 3vh;
+    }
+
+h2{
+    color: white;
+}
+
+#form{
+  margin-top: 2em;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    font-size: 30px;
+    margin-left: 2em;
+    float:left;
+    width:50%;
+}
+#form input{
+    font-size: 30px;
+    margin-left: 2em;
+    width: 130%;
+  height: 10%;
+}
+
+
+  
+
+
+ #form #submit{
+  grid-column-start: 2;
+ }
+ .right{
+  grid-column-start: 4;
+  grid-column-end: 5;
+  background-color: #AAAAAA;
+  margin-right: 3em;
+ }
+
+ table.InfoOnSongs {
+  border: 10px solid #ff0000;
+  background-color: #933C99;
+ grid-column-start: 1;
+ grid-column-end: 5;
+ grid-row-start: 2;
+ margin-top: 13rem;
+ 
+  text-align: center;
+  border-collapse: collapse;
+  
+}
+table.InfoOnSongs td, table.InfoOnSongs th {
+  border: 1px solid #AAAAAA;
+}
+table.InfoOnSongs tbody td {
+  font-size: 25px;
+}
+table.InfoOnSongs tr:nth-child(even) {
+  background: #F463FE;
+}
+table.InfoOnSongs thead {
+  background: #F463FE;
+  background: -moz-linear-gradient(top, #f78afe 0%, #f572fe 66%, #F463FE 100%);
+}
+table.InfoOnSongs thead th {
+  font-size: 45px;
+  font-weight: bold;
+  color: #FEFEFE;
+  text-align: center;
+
+}
+table.InfoOnSongs tfoot td {
+  font-size: 30px;
+}

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+/* Custom Scrollbar */
+/* this is for Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #68026d #2c013b;
+}
+
+/* for Chromium */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #2c013b;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #68026d;
+  border-radius: 4px;
+  border: 3px solid #f463fe;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 0.5fr;
+  grid-template-rows: 0.2fr 1.8fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "UserinfoTitle AnalyticsTitle SonginfoTitle"
+    "Userinfo Analytics Songinfo";
+  color: aliceblue;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f463fe;
+}
+
+.UserinfoTitle {
+  grid-area: UserinfoTitle;
+}
+
+.AnalyticsTitle {
+  grid-area: AnalyticsTitle;
+}
+
+.SonginfoTitle {
+  grid-area: SonginfoTitle;
+  border-color: white;
+}
+
+.UserinfoTitle,
+.AnalyticsTitle,
+.SonginfoTitle {
+  background-color: #0f0015;
+  font-weight: 900;
+  font-size: 2vw;
+  text-align: center;
+  border: 1px solid;
+  border-color: #f463fe;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.Userinfo {
+  grid-area: Userinfo;
+  background-color: #1c0026;
+}
+
+.Analytics {
+  grid-area: Analytics;
+  background-color: #2c013b;
+}
+
+.Songinfo {
+  grid-area: Songinfo;
+  background-color: #1c0026;
+}
+
+.Userinfo,
+.Analytics,
+.Songinfo {
+  border: 1px solid;
+  border-color: #f463fe;
+  padding: 1vh;
+  overflow: scroll;
+  font-size: 0.7vw;
+}
+
+button {
+  background-color: #2c013b;
+  font-size: 1.5em;
+  color: #f463fe;
+  border-color: #f463fe;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+button:hover {
+  background-color: #f463fe;
+  color: #2c013b;
+}
+
+a {
+  text-decoration: none;
+  color: #f463fe;
+}
+
+a:hover {
+  color: #2c013b;
+}
+
+h1 {
+  font-weight: bold;
+  display: inline;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px dashed #ccc;
+  background-color: #f463fe;
+  margin: 1vh 0 1vh 0;
+}
+
+.User {
+  color: white;
+}
+
+.Artist {
+  color: #f463fe;
+  background-color: #2c013b;
+  text-decoration: underline;
+}

@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10vh;
+
+}
+.container input, button {
+    width: 75%;
+    border: 0.5vh solid white;
+    border-right: 0px;
+    font-size: 10vh;
+    padding: 12px;
+    background: transparent;
+    color: #f463fe;
+    height: 15vh;
+
+}
+
+.container button {
+    width: 25%;
+    background: #eee;
+    color: #f463fe;
+    border-radius: 0 5vh 5vh 0;
+    float: right;
+}
+.container input {
+    border-radius: 5vh 0 0 5vh;
+
+
+}
+
+
+.container input:hover, button:hover{
+    opacity: 0.8;
+}
